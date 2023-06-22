@@ -21,7 +21,7 @@ body{
 /*HERADER*/
 header{
     display: flex;
-    padding: 10px 5%;
+    padding: 15px 5%;
     justify-content: space-between;
     align-items: center;
 }
@@ -60,18 +60,18 @@ header{
     color:brown;
 }
 
-.header .btn button{
+.header .btn{
     color:antiquewhite;
     padding: 10px 20px;
-    background-color: olive;
     border:none;
     border-radius: 50px;
     cursor:pointer;
     transform: all 0.3s;
 }
 
-.header .btn button:hover{
+.header .btn:hover{
     color:brown;
+    border: 1px solid brown;
     transform: scale(1.1);
 }
 
