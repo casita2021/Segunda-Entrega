@@ -1,0 +1,222 @@
+:root{ 
+     --primary: #f5f5f5;
+     --secundary:  #808000;
+
+     /* BTN */
+     --btn: #dc143c;
+}
+
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+body{
+   background: var(--secundary);
+}
+
+
+/*HERADER*/
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+    align-items: center;
+    position:fixed;
+    background: var(--primary);
+}
+
+/* LOGO */
+.logo{
+    width: 80px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 400;
+    transition: all 1s;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    color: var(--btn);
+    font-weight: 700;
+}
+
+
+/* NAVBAR */
+
+/* 
+  PROBLEMAS en la nav, cuando el cursor se fija en un link 
+  los demás elementos se desplazan, ¿por qué pasa esto?
+*/
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary);
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+    
+}
+.nav-links li{
+    transition: all 1s;  
+}
+
+.nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.nav-links a{
+    color: var(--secundary);
+    font-weight: 400;
+    padding: 0 30px;
+}
+
+.nav-links a:hover{
+  color: var(--btn);
+  font-weight: 700;
+}   
+
+
+/* BTN contacto */
+.btn{
+    padding: 5px 15px;
+    border:none;
+    color:var(--btn);
+    border: 1px solid var(--btn);
+    border-radius: 30px;  
+    font-weight: 400;
+    transition: all 1s;
+}
+
+.btn:hover{
+    color:var(--primary);
+    background: crimson;
+    transform: scale(1.1);
+}
+
+/* MAIN */
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1300px; 
+    margin-top: 70px;
+    padding: 70px 0;
+    background: var(--secundary);
+}
+    
+.box_left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 30px;
+    padding: 10px;
+}
+
+.box_left h1{
+    font-size: 180px;
+    color: var(--primary);
+    font-weight: 400;
+    font-family: 'Bacasime Antique', serif;
+}
+
+p{
+    color: var(--primary);
+    font-weight: 700;
+    font-weight: 400;
+}
+
+
+/* LINKS PORTADA */
+.links{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.links a{
+    padding: 5px 15px;
+    color:var(--primary);
+    background: var(--btn);
+    border: 1px solid var(--btn);
+    border-radius: 30px;  
+    transition: all 1s;
+    font-weight: 400;
+} 
+
+.links a:hover{
+    transform: scale(1.1);
+}
+
+.right{
+    width: 100%;
+    background: var(--secundary);
+}
+
+.box_right{
+     width: 50%;
+     display: flex;
+     justify-content: right;
+     align-items: center;  
+     background-color: var(--secundary);
+}
+
+
+/* SECCTION DOS */
+#info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.text{
+    max-width: 1300px;
+    border-radius: 50px;
+    padding: 70px 0;
+}
+
+
+/* FOOTER */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    height: 100px;
+    color:var(--primary);
+    text-align: center;
+}
+
+
+
+
+
+
+
+ 
