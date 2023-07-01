@@ -58,9 +58,11 @@ header{
 */
 .nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background: var(--primary);
+    width: 50%;
+    height: 80px;
 }
 
 .nav-links{
@@ -68,10 +70,13 @@ header{
     justify-content: center;
     align-items: center;
     cursor: pointer; 
-    
+    width: 400px;
 }
+
 .nav-links li{
-    transition: all 1s;  
+    transition: all 1s; 
+    padding: 15px;
+    width: 100px;
 }
 
 .nav-links li:hover{
@@ -81,7 +86,7 @@ header{
 .nav-links a{
     color: var(--secundary);
     font-weight: 400;
-    padding: 0 30px;
+    padding: 10px;
 }
 
 .nav-links a:hover{
