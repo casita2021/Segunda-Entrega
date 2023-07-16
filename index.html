@@ -15,67 +15,176 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Playfair+Display:wght@400;700&display=swap" 
+    rel="stylesheet">
+
+    <!-- ICONOS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
 
 <body>
     <header class="header">
-            <a class="logo" src="#" alt="logo">Coffe Break</a>
+            <div class="container_logo">
+               <a class="logo" href="#hero" alt="logo">Coffe Break</a> 
+            </div>
             <nav class="nav">
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
+                <ul class="nav_links">
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#info_service">Servicios</a></li>
+                    <li><a href="#cards">Productos</a></li>
+                    <li><a href="#info">Novedades</a></li>
                 </ul>
             </nav>
-            <a href="#" class="btn">Contact</a>
+            <a href="#contacto_footer" class="btn">Contacto</a>
     </header>
 
      <!-- MAIN -->
     <main>
-        <div class="main">
-            <section id="hero" class="hero">
-                <div class="box_left">
-                    <h1> Coffee </h1>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Vitae dolores, eius aliquam voluptates excepturi iusto corrupti, 
-                        rem, odit quia praesentium inventore ut modi adipisci! Enim vel, 
-                        consequatur deleniti animi commodi ullam. Fuga aut quis, 
-                    </p>
-                    <div class="links">
-                        <a href="#"> Buy Now </a>
-                        <a href="#"> See Offers </a>
+        <section id="hero" class="hero">
+             <div class="box_left">
+                <h1> Coffee <span class="break">Break</span> </h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vitae dolores, eius aliquam voluptates excepturi iusto corrupti, 
+                    rem, odit quia praesentium inventore ut modi adipisci! Enim vel, 
+                    consequatur deleniti animi commodi ullam. Fuga aut quis, 
+                </p>
+                <div class="links">
+                    <a href="#"> COMPRAR </a>
+                    <a href="#"> ¡PROMO! </a>
+                </div>
+             </div>
+
+             <!-- BOX-RIGHT-->
+             <div class="box_right">
+                <svg  class="element_1" viewBox="0 0 185 185" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#F1C21B" d="M45.8,-46.7C56.7,-34.9,61.1,-17.4,62.8,1.7C64.6,20.9,63.7,41.9,52.8,57.6C41.9,73.4,20.9,83.9,0.2,83.8C-20.6,83.6,-41.2,72.7,-56.7,57C-72.1,41.2,-82.5,20.6,-80.6,1.9C-78.7,-16.8,-64.6,-33.6,-49.1,-45.5C-33.6,-57.3,-16.8,-64.2,0.3,-64.5C17.4,-64.8,34.9,-58.6,45.8,-46.7Z" 
+                    transform="translate(100 100)" />
+                    <div class="element_2">
+                        <img class="img"  src="./assets/img/fondo.png" alt="taza de cafe">
+                    </div>
+                </svg>
+             </div>
+        </section>
+              
+        <!-- SECTION SECOND -->
+        <section id="info_service" >
+             <h1>Servicios</h1>
+             <div class="text">
+                <div class="text_text">
+                     <i class="fa-sharp fa-solid fa-truck"></i>
+                     <p>Te llevamos el cafe a tu casa</p>
+                     <p>Prioridad en tu pedido - <span class="premium">Socios Premium</span></p>
+                     <p>Delivery sin cargo - Zona Centro</p>
+                </div>
+                <div class="text_text">
+                    <i class="fa-sharp fa-solid fa-tag"></i>
+                     <p>Descuento del <span class="premium">15%</span></p>
+                     <p>Superando una compra de $14.000 </p>
+                     <p>Servicio de Desayuno</p>
+                </div>
+                <div class="text_text">
+                    <i class="fa-solid fa-gifts"></i>
+                     <p><span class="premium">Socios Premium</span></p>
+                     <P>Gift Card + plus del local</P>
+                     <p>Enviamos la Gift Card a donde quieras</p>
+                </div>
+             </div>
+        </section>
+
+         <!-- SECTION CARD -->
+         <section id="cards">
+             <div class="card_text">
+                <h1>Todos tenemos un Café pendiente con alguien.</h1>
+                <p>Frente a una taza de Café se piensa, se recuerda</p>
+                <p>Se reflexiona, se sueña, se conversa, se escribe, se enamora ... y vos qué haces?</p>
+             </div>
+
+             <div class="card">
+                <div class="card_card">
+                     <img class="card_img" src="./assets/img/c1.png" alt="taza de cafe">
+                     <p class="name">Expreso Capuchino</p>
+                     <p>Orinigal de Austria</p>
+                     <span>$150</span>
+                     <a class="btn_2" href="">Comprar ahora</a>
+                </div> 
+
+                <div class="card_card">
+                     <img class="card_img" src="./assets/img/c2.png" alt="taza de cafe">
+                     <p class="name">Robusta</p>
+                     <p>Contiene más cafeína</p>
+                     <span>$150</span>
+                     <a class="btn_2" href="">Comprar ahora</a>
+                </div>
+
+                <div class="card_card">
+                     <img class="card_img" src="./assets/img/c3.png" alt="taza de cafe">
+                     <p class="name">Arábica</p>
+                     <p>Tiene un sutil sabor aromático</p>
+                     <span>$150</span>
+                     <a class="btn_2" href="">Comprar ahora</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="info">
+            <h2>Cafés molidos, en grano, cápsulas y ecológicos</h2>
+             <p class="info_text">
+                En nuestra web tenemos una amplia gama de café para todos los gustos, 
+                empezando por el café en grano para los que les gusta moler su propio 
+                café, pasando por los que disfrutan con el tradicional café molido 
+                o con la sencillez del café en cápsulas y hasta los que se preocupan
+                de que saborear un café ecológico gracias a su cultivo responsable.
+             </p>
+             <a class="btn_2" href="#">VER MAS!</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <svg id="contacto_footer"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                  <path fill="#F1C21B" 
+                    fill-opacity="1" d="M0,160L80,181.3C160,203,320,245,480,240C640,235,800,181,960,154.7C1120,128,1280,128,1360,128L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+                  </path>
+                <div class="box_left_footer">
+                    <div class="info_footer">
+                        <h3>Contactanos</h3>
+                        <i class="fa-solid fa-location-dot"> Laprimda 1207</i> 
+                        <i class="fa-solid fa-phone"> 0341-7180950 </i> 
+                        <i class="fa-solid fa-envelope"> carol@dominio12.com.ar </i> 
+                    </div>
+                    
+                    <div class="info_horarios">
+                        <h3>Horarios</h3>
+                        <p>Lunes a Sabados:</p>
+                        <p>8 a 20hs</p>
+                        <p>Feriados: 16hs a 20hs</p>
+                    </div>
+
+                    <div class="info_redes">
+                        <h3>Nuestras redes</h3>
+                        <div class="redes">
+                             <i class="fa-brands fa-twitter"></i>
+                             <i class="fa-brands fa-facebook"></i>
+                             <i class="fa-brands fa-square-instagram"></i>
+                        </div>
+                    </div>
+
+                    <div class="box_right_footer">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.9496250082534!2d-60.63783692550626!3d-32.952339372174066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab1b4c48c815%3A0x3a7515150b7ffa64!2sLaprida%201207%2C%20S2000CFO%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1689493284640!5m2!1ses-419!2sar" 
+                        width="100%" height="300" style="border:0;" allowfullscreen="" 
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
                 </div>
 
-                <!-- BOX-RIGHT-->
-                <div class="box_right">
-                    <img class="img"  src="./assets/img/cup_coffee.png" alt="taza de cafe">
-                </div>
-            </section>
               
-
-            <!-- SECTION SECOND -->
-            <section id="info">
-                <p class="text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                  Alias illum ullam cupiditate quas molestiae eum. Numquam 
-                  assumenda dolore ratione porro beatae! Id, iusto! Eos, 
-                  incidunt at! Velit tempora perspiciatis commodi rerum 
-                  excepturi saepe officia laborum consectetur expedita. 
-                  Quia quidem officiis debitis, blanditiis distinctio 
-                  nemo id esse ullam molestiae reprehenderit consequuntur. 
-                </p>
-            </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer">
-           <h1> 
-                HOLA!
-                <br>
-                Soy el footer 
-          </h1>
+            </svg>
         </div>
     </footer>
     

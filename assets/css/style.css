@@ -1,222 +1,389 @@
 :root{ 
      --primary: #f5f5f5;
-     --secundary:  #808000;
-
+     --secundary:  #ffffff;
      /* BTN */
      --btn: #dc143c;
+     /* DECO */
+     --deco: #F1C21B;
 }
 
 /*RESET*/
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Playfair Display', serif;
-    list-style: none;
-    text-decoration: none;
-    font-size: 20px;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Playfair Display', serif;
+     list-style: none;
+     text-decoration: none;
+     font-size: 20px;
 }
 
 body{
-   background: var(--secundary);
+    background: var(--primary);
 }
 
-
-/*HERADER*/
+/* HERADER */
 header{
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 80px;
-    align-items: center;
-    position:fixed;
-    background: var(--primary);
+     width: 100%;
+     height: 90px;
+     display: flex;
+     justify-content: space-between;
+     padding: 0 80px;
+     align-items: center;
+     position:fixed;
+     background: var(--primary);
 }
 
 /* LOGO */
+.container_logo{
+  width: 80px;
+  height: 80px;
+  background: var(--deco);
+  border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
 .logo{
-    width: 80px;
-    cursor: pointer;
-    text-align: center;
-    font-weight: 400;
-    transition: all 1s;
+     width: 80px;
+     cursor: pointer;
+     text-align: center;
+     font-weight: 400;
+     transition: all 1s;
 }
 
 .logo:hover{
-    transform: scale(1.1);
-    color: var(--btn);
-    font-weight: 700;
+     transform: scale(1.1);
+     color: var(--btn);
+     font-weight: 700;
 }
 
-
-/* NAVBAR */
-
-/* 
-  PROBLEMAS en la nav, cuando el cursor se fija en un link 
-  los demás elementos se desplazan, ¿por qué pasa esto?
-*/
 .nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--primary);
-    width: 50%;
-    height: 80px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 50%;
+     height: 80px;
+     border:1px solid red;
 }
 
-.nav-links{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer; 
-    width: 400px;
+.nav_links{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer; 
+     width: 600px;
+     gap:40px;
+     border:1px solid rgb(255, 204, 0);
+     padding: 20px; 
 }
 
 .nav-links li{
-    transition: all 1s; 
-    padding: 15px;
-    width: 100px;
+     transition: all 1s; 
+     padding: 10px;
+     width: 100px;
+     background: red;
 }
 
-.nav-links li:hover{
-    transform: scale(1.1);
+.nav_links li:hover{
+     transform: scale(1.1);
 }
 
-.nav-links a{
-    color: var(--secundary);
-    font-weight: 400;
-    padding: 10px;
+.nav_links a{
+     color: black;
+     font-weight: 400;
+     padding: 8px;
+     border:1px solid red;
 }
 
-.nav-links a:hover{
-  color: var(--btn);
-  font-weight: 700;
+.nav_links a:hover{
+     color: var(--btn);
+     font-weight: 700;
 }   
 
 
-/* BTN contacto */
+/* BTN CONTACTO */
 .btn{
-    padding: 5px 15px;
-    border:none;
-    color:var(--btn);
-    border: 1px solid var(--btn);
-    border-radius: 30px;  
-    font-weight: 400;
-    transition: all 1s;
+     padding: 5px 15px;
+     border:none;
+     color:var(--btn);
+     border: 1px solid var(--btn);
+     border-radius: 30px;  
+     font-weight: 400;
+     transition: all 1s;
 }
 
 .btn:hover{
-    color:var(--primary);
-    background: crimson;
-    transform: scale(1.1);
+     color:var(--primary);
+     background: crimson;
+     transform: scale(1.1);
 }
 
 /* MAIN */
-.main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+main{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column; 
 }
 
 #hero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1300px; 
-    margin-top: 70px;
-    padding: 70px 0;
-    background: var(--secundary);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     max-width: 1400px; 
+     margin-top: 70px;
+     padding: 70px 10px;
 }
     
 .box_left{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    gap: 30px;
-    padding: 10px;
+     display: flex;
+     flex-direction: column;
+     width: 50%;
+     gap: 30px;
+     padding: 15px;
 }
 
 .box_left h1{
-    font-size: 180px;
-    color: var(--primary);
-    font-weight: 400;
-    font-family: 'Bacasime Antique', serif;
+     font-size: 150px;
+     color: black;
+     font-weight: 700;
+     font-family: 'Bacasime Antique', serif;
+}
+.break{
+     color:var(--deco);
+     font-size: 80px;
 }
 
 p{
-    color: var(--primary);
-    font-weight: 700;
-    font-weight: 400;
+     color: black;
+     font-weight: 400;
 }
 
 
 /* LINKS PORTADA */
 .links{
-    display: flex;
-    gap: 40px;
-    align-items: center;
-    margin-top: 50px;
+     display: flex;
+     gap: 40px;
+     align-items: center;
+     margin-top: 50px;
 }
 
 .links a{
-    padding: 5px 15px;
-    color:var(--primary);
-    background: var(--btn);
-    border: 1px solid var(--btn);
-    border-radius: 30px;  
-    transition: all 1s;
-    font-weight: 400;
+     padding: 5px 15px;
+     color:var(--primary);
+     background: var(--btn);
+     border: 1px solid var(--btn);
+     border-radius: 30px;  
+     transition: all 1s;
+     font-weight: 400;
 } 
 
 .links a:hover{
-    transform: scale(1.1);
-}
-
-.right{
-    width: 100%;
-    background: var(--secundary);
+     transform: scale(1.1);
 }
 
 .box_right{
      width: 50%;
      display: flex;
-     justify-content: right;
+     justify-content:center;
      align-items: center;  
-     background-color: var(--secundary);
+}
+
+.element{
+     position: relative;
+}
+
+.element_2{
+     position: absolute;
+     top: 5px;
 }
 
 
 /* SECCTION DOS */
-#info{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 300px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+#info_service{
+     background-image: url("../img/caffeetest.jpg");
+     background-position: center center ;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+     width: 100%;
+     padding: 300px 0;
+     color:var(--secundary);
+     text-align: center;
+     border:1px solid red;
+} 
+
+#info_service h1{
+   font-size: 40px;
 }
 
 .text{
-    max-width: 1300px;
-    border-radius: 50px;
-    padding: 70px 0;
-}
-
-
-/* FOOTER */
-.footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: black;
-    height: 100px;
-    color:var(--primary);
-    text-align: center;
+    gap: 65px;
+    padding-top: 45px;
 }
+
+.text_text p{
+    color: var(--primary);
+    padding-top: 20px;
+}
+
+.text h1{
+    text-align: center;
+    color:var(--primary)
+}
+.premium{
+    color: var(--btn);
+}
+
+
+/* SECCTION CARDS */
+#cards{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     max-width: 1400px;
+     padding: 80px 0;
+     gap:80px;
+}
+.card_text{
+     text-align: center;
+}
+.card_text h1{
+     color:var(--deco);
+     font-weight: 700;
+     font-size: 28px;
+}
+
+.card{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: fit-content;
+     max-width: 1400px;
+     gap:30px;
+     padding: 5px;
+}
+
+.card_card{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap:20px;
+     border-radius: 20px;
+     padding: 50px 0;
+     background: var(--primary);
+}
+.name{
+     font-weight: 800;
+}
+.card_img{
+     width: 80%; 
+}
+
+span{
+     font-weight: bold;
+     color:black;
+}
+
+.btn_2{
+     padding: 5px 15px;
+     color:var(--primary);
+     background: var(--btn);
+     border: 1px solid var(--btn);
+     border-radius: 30px;  
+     width: fit-content;
+     font-size: 18px;  
+}
+
+/* SECCTION CUATRO */
+#info{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     max-width: 1400px;
+     gap:20px;
+     padding: 40px 80px;
+     margin: 80px 0;
+     background: var(--deco);
+     border-radius: 40px;
+}
+
+/* FOOTER */
+.footer{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     padding-top: 150px;
+}
+
+#contacto_footer{
+     position: relative; 
+     display: flex;  
+     justify-content: space-between;  
+     align-items: center;  
+}
+
+.box_left_footer{
+     position: absolute;
+     display: flex;
+     align-items: center;
+     gap:50px;   
+     border:1px solid red;
+}
+
+.info_footer{
+     display: flex;
+     flex-direction: column;
+     gap: 25px;
+     font-size: 16px;
+     border: 1px solid red;
+}
+
+.info_footer i{
+     font-size: 16px;
+}
+
+.info_horarios{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-size: 16px;
+    border:1px solid red;
+}
+
+
+.info_redes{
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     font-size: 16px;
+     border:1px solid red;
+}
+
+.redes{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;   
+     gap: 22px; 
+}
+
+
+
+
 
 
 
