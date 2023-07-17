@@ -26,95 +26,74 @@ body{
 
 /* HERADER */
 header{
-     width: 100%;
-     height: 90px;
-     display: flex;
-     justify-content: space-between;
-padding: 0 70px;
-    /* padding: 0 63px;*/
-     align-items: center;
-     position:fixed;
-     background: var(--primary);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 75px;
+      display: flex;
+      padding: 0 70px;
+      position:fixed;
+      background: var(--primary);
 }
 
 /* LOGO */
 .logo{
-     width: 80px;
-     cursor: pointer;
-     text-align: center;
-     font-weight: 400;
-     color: var(--text);
-     font-size: 18px;
-     transition: all 1s;
+      width: 80px;
+      cursor: pointer;
+      font-weight: 400;
+      color: var(--text);
+      font-size: 18px;
+      transition: all 0.3s;
 }
 
 .logo:hover{
-     transform: scale(1.1);
-     color: var(--btn);
-     font-weight: 700;
+      transform: scale(1.2);
+      color: var(--btn);
+      font-weight: 700;
 }
 
-.nav{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-    /* width: 600px;*/
-     height: 80px;
+.nav_links li{
+      display: inline-block;
+      padding: 0 20px;
+    
 }
-
-.nav_links{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     cursor: pointer; 
-  /*   width: 600px;*/
-     gap:40px;
-     padding: 10px; 
-}
-
-.nav-links li{
-     transition: all 1s; 
-     padding: 10px;
-}
-
 .nav_links li:hover{
      transform: scale(1.1);
 }
 
-.nav_links li a -btn{
-     color: var(--text);
-     font-weight: 400;
-     padding: 8px;
-     width: fit-content
+.nav-links li a{
+      color: black;
+      font-weight: 400;
 }
 
-.nav_links  li a:hover{
-     color: var(--btn);
-     font-weight: 700;
-}   
+.nav_links li a:hover{
+     color: var(--btn); 
+}
 
+   
 /* BTN CONTACTO */
 .btn{
-     padding: 5px 15px;
-     border:none;
-     color:var(--btn);
-     border: 1px solid var(--btn);
-     border-radius: 30px;
-     font-weight: 400;
-     transition: all 1s;
+      padding: 5px 15px;
+      border:none;
+      color:var(--btn);
+      border: 1px solid var(--btn);
+      border-radius: 30px;
+      font-weight: 400;
+      transition: all 1s;
 }
 
 .btn:hover{
-     color:var(--primary);
-     background: crimson;
-     transform: scale(1.1);
+      color:var(--primary);
+      background: crimson;
+      transform: scale(1.1);
+}
+.checkbtn{
+      display: none;
 }
 
 #check{
-     display: none;
-}
-.checkbtn{
-     display: none;
+      display: none;
 }
 
 
