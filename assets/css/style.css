@@ -5,6 +5,8 @@
      --btn: #dc143c;
      /* DECO */
      --deco: #F1C21B;
+     /* TEXT */
+     --text: #000000;
 }
 
 /*RESET*/
@@ -15,7 +17,7 @@
      font-family: 'Playfair Display', serif;
      list-style: none;
      text-decoration: none;
-     font-size: 20px;
+     font-size: 18px;
 }
 
 body{
@@ -28,31 +30,21 @@ header{
      height: 90px;
      display: flex;
      justify-content: space-between;
-     padding: 0 80px;
+padding: 0 70px;
+    /* padding: 0 63px;*/
      align-items: center;
      position:fixed;
      background: var(--primary);
 }
 
 /* LOGO */
-.container_logo{
-  width: 80px;
-  height: 80px;
-  background: var(--deco);
-  border-radius: 50%;
-display: flex;
-justify-content: center;
-align-items: center;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
 .logo{
      width: 80px;
      cursor: pointer;
      text-align: center;
      font-weight: 400;
+     color: var(--text);
+     font-size: 18px;
      transition: all 1s;
 }
 
@@ -66,9 +58,8 @@ align-items: center;
      display: flex;
      justify-content: center;
      align-items: center;
-     width: 50%;
+    /* width: 600px;*/
      height: 80px;
-     border:1px solid red;
 }
 
 .nav_links{
@@ -76,35 +67,31 @@ align-items: center;
      justify-content: center;
      align-items: center;
      cursor: pointer; 
-     width: 600px;
+  /*   width: 600px;*/
      gap:40px;
-     border:1px solid rgb(255, 204, 0);
-     padding: 20px; 
+     padding: 10px; 
 }
 
 .nav-links li{
      transition: all 1s; 
      padding: 10px;
-     width: 100px;
-     background: red;
 }
 
 .nav_links li:hover{
      transform: scale(1.1);
 }
 
-.nav_links a{
-     color: black;
+.nav_links li a -btn{
+     color: var(--text);
      font-weight: 400;
      padding: 8px;
-     border:1px solid red;
+     width: fit-content
 }
 
-.nav_links a:hover{
+.nav_links  li a:hover{
      color: var(--btn);
      font-weight: 700;
 }   
-
 
 /* BTN CONTACTO */
 .btn{
@@ -112,7 +99,7 @@ align-items: center;
      border:none;
      color:var(--btn);
      border: 1px solid var(--btn);
-     border-radius: 30px;  
+     border-radius: 30px;
      font-weight: 400;
      transition: all 1s;
 }
@@ -122,6 +109,14 @@ align-items: center;
      background: crimson;
      transform: scale(1.1);
 }
+
+#check{
+     display: none;
+}
+.checkbtn{
+     display: none;
+}
+
 
 /* MAIN */
 main{
@@ -135,32 +130,36 @@ main{
      display: flex;
      justify-content: center;
      align-items: center;
-     max-width: 1400px; 
+     width: 100%;
      margin-top: 70px;
-     padding: 70px 10px;
+     padding: 70px 20px;
+     gap: 10px;
 }
     
 .box_left{
      display: flex;
      flex-direction: column;
+     justify-content: center;
      width: 50%;
-     gap: 30px;
-     padding: 15px;
+     gap: 80px;
+     padding: 35px;
 }
 
 .box_left h1{
      font-size: 150px;
-     color: black;
+     color: var(--text);
      font-weight: 700;
      font-family: 'Bacasime Antique', serif;
+  
 }
 .break{
      color:var(--deco);
      font-size: 80px;
+     font-weight: 700;
 }
 
 p{
-     color: black;
+     color: var(--text);
      font-weight: 400;
 }
 
@@ -178,7 +177,7 @@ p{
      color:var(--primary);
      background: var(--btn);
      border: 1px solid var(--btn);
-     border-radius: 30px;  
+     border-radius: 30px;
      transition: all 1s;
      font-weight: 400;
 } 
@@ -191,18 +190,12 @@ p{
      width: 50%;
      display: flex;
      justify-content:center;
-     align-items: center;  
+     align-items: center;
+     background-image: url("../img/blob.svg");
+     background-position: center center ;
+     background-repeat: no-repeat;
+     background-size: cover;
 }
-
-.element{
-     position: relative;
-}
-
-.element_2{
-     position: absolute;
-     top: 5px;
-}
-
 
 /* SECCTION DOS */
 #info_service{
@@ -215,32 +208,31 @@ p{
      padding: 300px 0;
      color:var(--secundary);
      text-align: center;
-     border:1px solid red;
 } 
 
 #info_service h1{
-   font-size: 40px;
+     font-size: 40px;
 }
 
 .text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 65px;
-    padding-top: 45px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 65px;
+     padding-top: 45px;
 }
 
 .text_text p{
-    color: var(--primary);
-    padding-top: 20px;
+     color: var(--primary);
+     padding-top: 20px;
 }
 
 .text h1{
-    text-align: center;
-    color:var(--primary)
+     text-align: center;
+     color:var(--primary)
 }
 .premium{
-    color: var(--btn);
+     color: var(--btn);
 }
 
 
@@ -281,7 +273,7 @@ p{
      gap:20px;
      border-radius: 20px;
      padding: 50px 0;
-     background: var(--primary);
+     background: var(--secundary);
 }
 .name{
      font-weight: 800;
@@ -292,17 +284,16 @@ p{
 
 span{
      font-weight: bold;
-     color:black;
+     color: var(--text);
 }
-
 .btn_2{
      padding: 5px 15px;
      color:var(--primary);
      background: var(--btn);
      border: 1px solid var(--btn);
-     border-radius: 30px;  
+     border-radius: 30px;
      width: fit-content;
-     font-size: 18px;  
+     font-size: 18px;
 }
 
 /* SECCTION CUATRO */
@@ -319,37 +310,39 @@ span{
      background: var(--deco);
      border-radius: 40px;
 }
+.text{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /* FOOTER */
-.footer{
+#container_footer{
      display: flex;
      justify-content: center;
      align-items: center;
-     position: relative;
-     padding-top: 150px;
-}
-
-#contacto_footer{
-     position: relative; 
-     display: flex;  
-     justify-content: space-between;  
-     align-items: center;  
-}
-
-.box_left_footer{
-     position: absolute;
-     display: flex;
-     align-items: center;
-     gap:50px;   
-     border:1px solid red;
+     padding-top: 60px;
+     background: url("../img/wave.svg");
+     background-position: center center ;
+     background-repeat: no-repeat;
+     background-size: cover;  
+     padding-top: 20px;
+     padding-top: 120px;
 }
 
 .info_footer{
      display: flex;
+     justify-content: center;
+     align-items: center;
+     gap:30px;   
+     flex-wrap: wrap;
+     padding: 30px;  
+}
+
+.info_contacto{
+     display: flex;
      flex-direction: column;
      gap: 25px;
      font-size: 16px;
-     border: 1px solid red;
 }
 
 .info_footer i{
@@ -357,20 +350,18 @@ span{
 }
 
 .info_horarios{
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    font-size: 16px;
-    border:1px solid red;
+     display: flex;
+     flex-direction: column;
+     gap: 14px;
+     font-size: 16px;
 }
 
 
 .info_redes{
      display: flex;
      flex-direction: column;
-     gap: 20px;
+     gap: 30px;
      font-size: 16px;
-     border:1px solid red;
 }
 
 .redes{
@@ -380,6 +371,7 @@ span{
      align-items: center;   
      gap: 22px; 
 }
+
 
 
 

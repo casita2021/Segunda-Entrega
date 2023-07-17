@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Lading-page</title>
+    <title> Coffe Break</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/mediaqueri.css">
 
     <!-- TIPOGRAFIAS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,18 +31,21 @@
 
 <body>
     <header class="header">
-            <div class="container_logo">
-               <a class="logo" href="#hero" alt="logo">Coffe Break</a> 
-            </div>
+            <a class="logo" href="#hero" alt="logo">Coffe Break</a> 
             <nav class="nav">
+                <label for="check" class="checkbtn">
+                    <img src="./assets/img/menu.png" alt="menu-icon">
+                </label>
+                <input type="checkbox" id="check">
+                
                 <ul class="nav_links">
                     <li><a href="#hero">Inicio</a></li>
                     <li><a href="#info_service">Servicios</a></li>
                     <li><a href="#cards">Productos</a></li>
                     <li><a href="#info">Novedades</a></li>
+                    <li><a href="#container_footer" class="btn">Contacto</a></li>
                 </ul>
             </nav>
-            <a href="#contacto_footer" class="btn">Contacto</a>
     </header>
 
      <!-- MAIN -->
@@ -62,13 +66,7 @@
 
              <!-- BOX-RIGHT-->
              <div class="box_right">
-                <svg  class="element_1" viewBox="0 0 185 185" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#F1C21B" d="M45.8,-46.7C56.7,-34.9,61.1,-17.4,62.8,1.7C64.6,20.9,63.7,41.9,52.8,57.6C41.9,73.4,20.9,83.9,0.2,83.8C-20.6,83.6,-41.2,72.7,-56.7,57C-72.1,41.2,-82.5,20.6,-80.6,1.9C-78.7,-16.8,-64.6,-33.6,-49.1,-45.5C-33.6,-57.3,-16.8,-64.2,0.3,-64.5C17.4,-64.8,34.9,-58.6,45.8,-46.7Z" 
-                    transform="translate(100 100)" />
-                    <div class="element_2">
-                        <img class="img"  src="./assets/img/fondo.png" alt="taza de cafe">
-                    </div>
-                </svg>
+                <img src="./assets/img/fondo.png" alt="paquete de cafe">
              </div>
         </section>
               
@@ -108,7 +106,7 @@
              <div class="card">
                 <div class="card_card">
                      <img class="card_img" src="./assets/img/c1.png" alt="taza de cafe">
-                     <p class="name">Expreso Capuchino</p>
+                     <p class="name">Capuchino</p>
                      <p>Orinigal de Austria</p>
                      <span>$150</span>
                      <a class="btn_2" href="">Comprar ahora</a>
@@ -125,7 +123,7 @@
                 <div class="card_card">
                      <img class="card_img" src="./assets/img/c3.png" alt="taza de cafe">
                      <p class="name">Arábica</p>
-                     <p>Tiene un sutil sabor aromático</p>
+                     <p>Sutil sabor aromático</p>
                      <span>$150</span>
                      <a class="btn_2" href="">Comprar ahora</a>
                 </div>
@@ -145,47 +143,33 @@
         </section>
     </main>
 
-    <footer>
-        <div class="footer">
-            <svg id="contacto_footer"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                  <path fill="#F1C21B" 
-                    fill-opacity="1" d="M0,160L80,181.3C160,203,320,245,480,240C640,235,800,181,960,154.7C1120,128,1280,128,1360,128L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
-                  </path>
-                <div class="box_left_footer">
-                    <div class="info_footer">
-                        <h3>Contactanos</h3>
-                        <i class="fa-solid fa-location-dot"> Laprimda 1207</i> 
-                        <i class="fa-solid fa-phone"> 0341-7180950 </i> 
-                        <i class="fa-solid fa-envelope"> carol@dominio12.com.ar </i> 
+    <footer id="container_footer">
+            <div class="info_footer">
+                 <div class="info_contacto">
+                    <h3>Contactanos</h3>
+                    <i class="fa-solid fa-location-dot"> Laprida 1207</i> 
+                    <i class="fa-solid fa-phone"> 0341-7180950 </i> 
+                    <i class="fa-solid fa-envelope"> carol@dominio12.com.ar </i> 
+                 </div>
+                 <div class="info_horarios">
+                    <h3>Horarios</h3>
+                    <p>Lunes a Sabados:</p>
+                    <p>8 a 20hs</p>
+                    <p>Feriados: 16hs a 20hs</p>
+                 </div>
+                 <div class="info_redes">
+                    <h3>Nuestras redes</h3>
+                    <div class="redes">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
                     </div>
-                    
-                    <div class="info_horarios">
-                        <h3>Horarios</h3>
-                        <p>Lunes a Sabados:</p>
-                        <p>8 a 20hs</p>
-                        <p>Feriados: 16hs a 20hs</p>
-                    </div>
-
-                    <div class="info_redes">
-                        <h3>Nuestras redes</h3>
-                        <div class="redes">
-                             <i class="fa-brands fa-twitter"></i>
-                             <i class="fa-brands fa-facebook"></i>
-                             <i class="fa-brands fa-square-instagram"></i>
-                        </div>
-                    </div>
-
-                    <div class="box_right_footer">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.9496250082534!2d-60.63783692550626!3d-32.952339372174066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab1b4c48c815%3A0x3a7515150b7ffa64!2sLaprida%201207%2C%20S2000CFO%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1689493284640!5m2!1ses-419!2sar" 
-                        width="100%" height="300" style="border:0;" allowfullscreen="" 
-                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                </div>
-
-              
-            </svg>
-        </div>
+                 </div>
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.9496250082534!2d-60.63783692550626!3d-32.952339372174066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab1b4c48c815%3A0x3a7515150b7ffa64!2sLaprida%201207%2C%20S2000CFO%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1689493284640!5m2!1ses-419!2sar" 
+                    width="30%" height="200" style="border:0;" allowfullscreen="" 
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                 </iframe>
+             </div> 
     </footer>
     
 </body>

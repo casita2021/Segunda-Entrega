@@ -1,0 +1,103 @@
+@media (max-width:992px){
+    .nav_links{
+         position: absolute;
+         top:65px;
+         width: 90%;
+         left: 5%;
+         right: 5%;
+         border-top: 0;
+         flex-direction: column;
+         background: var(--primary);
+         border-radius: 0px 0px 15px 15px;
+         padding: 80px 30px;
+         align-items: center;
+         display: none;
+    }
+    .nav-links a{
+         font-size: 16px;
+    }
+    .nav{
+        justify-content: right;
+        align-items: center;
+        padding: 10px;
+    }
+    .checkbtn{
+         display: flex;
+         cursor: pointer;
+    }
+    .checkbtn img{
+        width: 20px;
+        height: 20px;
+    }
+    #check:checked + .nav_links{
+         display: flex;
+    }
+
+    #hero{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap:30px;
+         flex-wrap: wrap;
+    }
+    .box_left{
+         display:flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         gap:30px;
+         text-align: center;
+         width: 100%;
+    }
+    .box_right{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+    }
+   
+    #info_service{
+         display: flex;
+         flex-direction: column;
+    }
+    .text{
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-items: center;
+    }
+    #cards{
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+    }
+
+    .card{
+         display: flex;
+         flex-direction: column;
+    }
+
+    #container_footer{
+         display: flex;
+         flex-direction: column;
+    }
+    .info_footer{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+    }
+    iframe{
+         width: 100%;
+    }
+}
+
+@media (max-width:550px){
+    .box_right{
+     display: none;
+   }
+}
+ 
