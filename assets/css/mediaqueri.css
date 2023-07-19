@@ -15,7 +15,8 @@
            gap:20px;
            font-weight: 400;
     }
-    .nav-links a{
+
+    .nav_links a{
            font-size: 16px;
     }
 
@@ -27,9 +28,7 @@
     #check:checked + .nav_links{
       display: none;     display: flex;
     } 
-    .btn{
-
-    }
+   
 
     #hero{
            display: flex;
