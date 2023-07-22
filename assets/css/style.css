@@ -55,18 +55,24 @@ header{
 
 .nav_links li{
       display: inline-block;
-      padding: 0 20px;
-}
-.nav_links li:hover{
-      transform: scale(1.1);
+      padding: 0 20px;   
 }
 
-.nav_links li a{
+.nav_links li:hover{
+      transform: scale(1.1);
+      color: var(--btn); 
+}
+
+.nav_links li a:hover{
+     color: var(--btn); 
+}
+
+.prueba{
       font-weight: 400;
       color:black;
 }
 
-.nav_links li a:hover{
+.prueba :hover{
       color: var(--btn); 
 }
 
@@ -87,7 +93,6 @@ header{
       background: crimson;
       transform: scale(1.1);
 }
-
 
 .checkbtn{
       display: none;
@@ -222,9 +227,9 @@ p{
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      max-width: 1400px;
       padding: 80px 0;
       gap:80px;
+      width: 100%;
 }
 .card_text{
       text-align: center;
@@ -239,10 +244,10 @@ p{
       display: flex;
       justify-content: center;
       align-items: center;
-      width: fit-content;
-      max-width: 1400px;
       gap:30px;
-      padding: 5px;
+      padding: 5px;  
+      flex-wrap: wrap;
+      max-width: 1400px;
 }
 
 .card_card{
@@ -252,9 +257,11 @@ p{
       flex-direction: column;
       gap:20px;
       border-radius: 20px;
-      padding: 50px 0;
+      padding: 30px 0;
       background: var(--secundary);
+width: 30%;
 }
+
 .name{
       font-weight: 800;
 }
@@ -300,28 +307,27 @@ span{
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-top: 60px;
       background: url("../img/wave.svg");
       background-position: center center ;
       background-repeat: no-repeat;
       background-size: cover;  
-      padding-top: 20px;
-      padding-top: 120px;
+      padding: 50px 0px;
 }
 
 .info_footer{
       display: flex;
       justify-content: center;
       align-items: center;
-      gap:30px;   
+      gap:60px;   
       flex-wrap: wrap;
-      padding: 30px;  
+      padding: 30px; 
+     border: 1 px solid greenyellow;  
 }
 
 .info_contacto{
       display: flex;
       flex-direction: column;
-      gap: 25px;
+      gap: 30px;
       font-size: 16px;
 }
 
@@ -332,7 +338,7 @@ span{
 .info_horarios{
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 23px;
       font-size: 16px;
 }
 
@@ -340,16 +346,16 @@ span{
 .info_redes{
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      align-items: center;
+      gap: 25px;
       font-size: 16px;
 }
 
 .redes{
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
       align-items: center;   
-      gap: 22px; 
+      gap: 32px; 
 }
 
 
