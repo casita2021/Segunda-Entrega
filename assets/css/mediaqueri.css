@@ -102,5 +102,8 @@
     .box_right{
       display: none;
    }
+   .box_left h1{
+       font-size: 100px;
+ }
 }
  
